@@ -1,0 +1,79 @@
+/* Not Found
+*
+-----------------------*/
+section#notfound {
+    height: 100vh;
+    width: 100%; }
+    section#notfound h3 {
+      position: absolute;
+      width: 100%;
+      top: 40%;
+      z-index: 4; }
+      @media (max-width: 991.98px) {
+        section#notfound h3 {
+          top: 15%; } }
+    section#notfound a {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      z-index: 10; }
+      @media (max-width: 991.98px) {
+        section#notfound a {
+          top: 35%; } }
+    section#notfound .EdificiosAzules {
+      position: absolute;
+      bottom: 20px;
+      left: 0px;
+      z-index: 5;
+      opacity: 0.9; }
+    section#notfound .EdificiosAmarillos {
+      position: absolute;
+      bottom: 25px;
+      left: 0px;
+      z-index: 6; }
+    section#notfound .Pasto {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 4; }
+    section#notfound .Ballena {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      z-index: 3; }
+      @media (max-width: 991.98px) {
+        section#notfound .Ballena {
+          top: 50%; } }
+    section#notfound .Autos {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      z-index: 7; }
+    section#notfound .NinaBicicleta {
+      position: absolute;
+      bottom: 25px;
+      right: 0px;
+      z-index: 5; }
+
+.girl-animation {
+    animation: girlFrames ease-out 12s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%; }
+  
+  @keyframes girlFrames {
+    0% {
+      transform: translate(-100%, 0px); }
+    20% {
+      transform: translate(-100%, 0px); }
+    100% {
+      transform: translate(0%, 0px); } }
+  .building-animation {
+    animation: buildingFrames ease-out 1.5s;
+    animation-iteration-count: 1;
+    transform-origin: 50% 50%; }
+  
+  @keyframes buildingFrames {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 0.9; } }
