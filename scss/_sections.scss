@@ -1,0 +1,514 @@
+/* Home Page
+*
+-----------------------*/
+section#intro{
+    transform: translateZ(0px);
+    width: 100%;
+    height: 100vh;
+    background: white;
+    @include media-breakpoint-up(md) {
+        background: url('../assets/img/home/iconica-studio-background-3.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    padding: $section-space*3 0px;
+    color: black;
+
+    div#divider{
+        height: 2px;
+        width: 100%;
+        background-color: $iconica-yellow;
+    }
+
+    p.lead{
+        font-family: 'satellite';
+        font-size: ms(2);
+    }
+
+    h1{
+        font-size: ms(2);
+    }
+
+    strong, b{
+        color: $iconica-yellow;
+    }
+}
+
+section#description{
+    padding: 3%;
+    overflow: hidden;
+    h2{
+        color: black;
+        span{
+            font-size: ms(7);
+        }
+    }
+
+    img{
+        position: absolute;
+        top: -5%;
+        width: 116%;
+        height: auto;
+        left:-8%;
+    }
+}
+
+section#services{
+    min-height: 60vh;
+
+    div.service-card{
+        position: relative;
+
+        h2{
+            position: absolute;
+            top: 30%;
+            font-size: ms(2);
+            @include media-breakpoint-up(md) {
+                font-size: ms(4);
+            }
+        }
+
+        h2, a {
+            color: white;
+            @include transition (0.5s);
+        }
+
+        a:hover h2{
+            @include transition (0.5s);
+            color: $iconica-yellow;
+            text-decoration: underline;
+        }
+    }
+
+    div.card{
+        border: 0px;
+        min-height: 300px;
+
+        &#branding-card{
+            background-image: url('../assets/img/home/estudio-branding-diseno-grafico-toluca-metepec.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &#startups-card{
+            background-image: url('../assets/img/home/agencia-publicidad-marketing-digital-toluca-metepec.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &#video-card{
+            background-image: url('../assets/img/home/edicion-video-animacion-toluca-metepec.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+        
+        &#apps-card{
+            background-image: url('../assets/img/home/diseno-aplicaciones-toluca-metepec.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+section#clients,
+section#instagram{
+    h4{
+        color: black;
+    }
+}
+
+section#clients{
+	background-image: url('../assets/img/home/publicidad-toluca-iconica-studio.jpg');
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+	@include media-breakpoint-up(md){
+		img{
+			width: 80%;
+		}
+	}
+}
+
+section#instagram{
+	background-image: url('../assets/img/home/instagram-iconica-studio.jpg');
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	
+    iframe{
+        border: 0px solid white !important;
+        border-radius: 0px;
+    }
+}
+
+section#contact{
+    background-color: $iconica-yellow;
+    position: relative;
+    min-height: 100vh;
+
+    h4{
+        color: black;
+    }
+
+    a{
+        color: white;
+
+        &:hover{
+            color: darken($iconica-yellow, 15%);
+            @include transition(0.3s);
+        }
+    }
+
+    div#contact-info{
+        padding-left: 5%;
+    }
+
+    div#contact-image{
+        @include media-breakpoint-down(sm) {
+            height: 300px;
+            i{
+                font-size: ms(4);
+            }
+        }
+        height: 100vh; width: 100%;
+        background-image: url('../assets/img/home/iconica-studio-contacto.png');
+        background-size: 100% auto;
+        background-position: center right;
+        background-repeat: no-repeat;
+    }
+
+    p span{
+        font-weight: 600;
+    }
+}
+
+
+/* Services
+*
+-----------------------*/
+section.service-section{
+    background: transparent;
+
+    div.divider {
+        height: 1rem;
+        width: 100%;
+        background-color: $iconica-yellow;
+    }
+    div.white-divider {
+        height: 1rem;
+        width: 100%;
+        background-color: white;
+    }
+}
+section#branding,
+section#startups,
+section#video,
+section#diseno-apps{
+    background-image: url('../assets/img/services/iconica-studio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: black;
+    #arrow-row{
+        bottom: ms(6);
+    }
+	h2{
+		font-family: 'satellite';
+        font-size: ms(1);
+    }
+    a h2{
+        color: black;
+    }
+}
+section#logo-design{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/diseno-logotipos-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#brandbook{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/manual-identidad-corporativa-toluca-metepec.png') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#web-design{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/diseno-paginas-web-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#social-media{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/publicidad-redes-sociales-facebook.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#posicionamiento-google{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/publicidad-anuncios-google.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#paid-campaigns{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/publicidad-facebook-instagram-twitter.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#videos-corporativos{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/videos-corporativos-institucionales-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#fotografia-producto{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/fotografia-producto-institucional-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#realidad-aumentada{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/realidad-aumentada-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#desarrollo-apps{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/desarrollo-apps-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+section#diseno-interfaz{
+    @include media-breakpoint-down(sm) {
+        background: url('../assets/img/services/diseno-interfaz-aplicaciones-toluca-metepec.jpg') no-repeat center fixed;
+        background-size: cover;
+    }
+}
+
+
+/* Portfolio
+*
+-----------------------*/
+section#portfolio-intro{
+	background-image: url('../assets/img/portfolio/iconica-studio-portafolio-trabajos.png');
+	background-size: 100% auto;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100vh;
+	width: 100%;
+	
+	@include media-breakpoint-down(md){
+		background-size: auto 100%;
+		
+		h1{
+			font-size: ms(4);
+		}
+		h2{
+			font-size: ms(3);
+		}
+	}
+	
+	h1{
+		font-size: ms(5);
+		color: white;
+		span{
+			background-color: $iconica-yellow;
+		}
+	}
+	h2{
+		font-size: ms(4);
+	}
+}
+section#portfolio{
+    // position: relative;
+
+    .grid-item{
+        .card{
+            border: 0px;
+
+            .card-img-top:hover{
+                cursor: pointer;
+            }
+
+            img{
+                @include transition(0.5s);
+                &:hover{
+                    filter: sepia(0.618);
+                }
+            }
+
+            .card-text small{
+                font-family: 'satellite';
+            }
+        }
+    }
+}
+
+
+/* About
+*
+-----------------------*/
+section#meaning{
+    background-image: url('../assets/img/ui/iconica_pattern.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+
+    .words{
+        background-color: white;
+        border: 5px solid $iconica-blue;
+        span{
+            font-size: ms(3);
+        }
+    }
+
+    #title{
+        background-color: $iconica-yellow;
+        color: white;
+        border: 5px solid $iconica-blue;
+        h1{
+            font-family: 'semplicita';
+            letter-spacing: ms(0);
+            font-size: ms(8);
+        }
+    }
+}
+
+section#about{
+    h3{
+        color: $iconica-yellow;
+        font-size: 3rem;
+    }
+
+    h6, p{
+        color: black;
+    }
+    p{
+        font-size: ms(2);
+    }
+
+    div#about-text{
+        padding: 20px 3%;
+    }
+
+    blockquote p{
+        color: $iconica-pink;
+        font-weight: 900;
+        font-size: ms(2);
+        width: 90%;
+    }
+
+    .fa-circle{
+        color: $iconica-yellow;
+    }
+
+    a:hover{
+        color: darken($iconica-yellow, 10%);
+    }
+}
+
+section.chill{
+    h4{
+        color: $iconica-yellow;
+    }
+
+    div#about-image {
+        background-image: url('../assets/img/ui/iconica-circle.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+
+        width: 100%;
+        height: 500px;
+        max-width: 500px !important;
+        max-height: 500px;
+    }
+    div.e.s.d.t{
+        background-color: $iconica-yellow !important;
+    }
+}
+
+
+/* Freebies
+*
+-----------------------*/
+section.banner{
+    .banner-text{
+        @include media-breakpoint-up(md) {
+            column-count: 2;
+            column-gap: 1rem;
+        }
+    }
+}
+
+
+/* Not Found
+*
+-----------------------*/
+section#notfound{
+    height: 100vh;
+    width: 100%;
+
+    h3{
+        position: absolute;
+        width: 100%;
+        top: 40%;
+        z-index: 4;
+        @include media-breakpoint-down(md){
+            top: 15%;
+        }
+    }
+
+    a{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        z-index: 10;
+        @include media-breakpoint-down(md){
+            top: 35%;
+        }
+    }
+
+    .EdificiosAzules{
+        position: absolute;
+        bottom: 20px; left: 0px;
+        z-index: 5;
+        opacity: 0.9;
+    }
+    .EdificiosAmarillos{
+        position: absolute;
+        bottom: 25px; left: 0px;
+        z-index: 6;
+    }
+    .Pasto{
+        position: absolute;
+        bottom: 0px; left: 0px;
+        z-index: 4;
+    }
+    .Ballena{
+        position: absolute;
+        top: 10%; left: 5%;
+        z-index: 3;
+        @include media-breakpoint-down(md){
+            top: 50%;
+        }
+    }
+    .Autos{
+        position: absolute;
+        bottom: 0px;    left: 0px;
+        z-index: 7;
+    }
+    .NinaBicicleta{
+        position: absolute;
+        bottom: 25px;    right: 0px;
+        z-index: 5;
+    }
+}
