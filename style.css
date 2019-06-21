@@ -37,7 +37,7 @@ html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}html{-ms-text-s
 *
 -----------------------*/
 section.portfolio-intro {
-    background-image: url("https://iconica.mx/dateaconocer/rotate.php");
+    background-image: url("https://iconica.mx/assets/img/home/bg/rotate.php");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
