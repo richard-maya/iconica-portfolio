@@ -7,28 +7,65 @@
     <meta name="robots" content="index, follow">
     <meta name="bingbot" content="index, follow">
     <meta name="googlebot" content="index, follow">
-    <meta name="copyright" content="Copyright © 2019 Iconica Studio">
+    <meta name="copyright" content="Copyright © 2020 Iconica Studio">
     <meta name="p:domain_verify" content="e3eb296082b65a37cf31940943bcf7b9" />
 	<link rel="shortcut icon" href="https://iconica.mx/favicon.ico">
+
+    <!-- GOOGLE TAG MANAGER
+    ================================================== -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KKLXD39');</script>
 	
 	<!-- TITLE
     ================================================== -->
-	<title><?php wp_title(''); ?> | Iconica Studio</title>
+    <title>
+        <?php
+            if ( is_front_page()) {
+                echo 'Portafolio de Trabajos | Diseño Gráfico Toluca';
+            } elseif ( is_single() ) {
+                wp_title('');
+            } else {
+                wp_title(''); echo '| Iconica Studio';
+            }
+        ?>
+    </title>
 	
 	<!-- SEO INFO
     ================================================== -->
-    <meta name="description" content="Portafolio de trabajos | Diseño Gráfico | Iconica Studio.">
+    <meta name="description" content="
+        <?php
+            if ( is_front_page()) {
+                echo 'Portafolio de Trabajos | Diseño Gráfico Toluca';
+            } elseif ( is_single() ) {
+                wp_title('');
+            } else {
+                wp_title(''); echo '| Iconica Studio';
+            }
+        ?>
+    ">
     <meta name="keywords" content="iconica studio trabajos, iconica studio toluca, iconica studio metepec">
     <meta name="author" content="Iconica Studio">
     
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKLXD39" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <!-- NAVBAR
 ================================================== -->
 <nav class="navbar w3-top w3-card">
+    <?php $top_banner = get_field('top_banner', 'option'); 
+        if( $top_banner['show_banner'] == true ) { ?>
+            <div class="w3-bar w3-center w3-theme-d1">
+                <p class="w3-medium">
+                    <a href="<?php echo $top_banner['banner_link']; ?>" title="<?php echo $top_banner['banner_alt_text']; ?>"><?php echo $top_banner['banner_text']; ?></a>
+                </p>
+            </div>
+    <?php } ?>
+
     <div class="w3-bar w3-large">
         <a href="/" class="w3-bar-item w3-button menu-logo">
             <picture>

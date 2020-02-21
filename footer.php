@@ -65,7 +65,7 @@
     <div class="w3-container">
         <div class="w3-row-padding">
             <div class="w3-col m6">
-                <p class="w3-medium"><span class="semplicita-font">&copy;</span> 2019 ICONICA STUDIO. Todos los derechos reservados.</p>
+                <p class="w3-medium"><span class="semplicita-font">&copy;</span> 2020 ICONICA STUDIO. Todos los derechos reservados.</p>
             </div>
             <div class="w3-col m6 w3-right-align">
                 <p class="w3-medium"><a href="https://iconica.mx/aviso-privacidad.html" title="aviso-privacidad-iconica-studio" class="px-1">Aviso de Privacidad</a><a href="https://iconica.mx/sitemap.html" title="mapa-del-sitio-iconica-studio">Mapa del sitio</a></p>
@@ -78,8 +78,27 @@
 <!-- MICRODATA
 ================================================== -->
 <div itemscope itemtype="http://schema.org/CreativeWork">
-	<img itemprop="image" alt="Portafolio de trabajos | Iconica Studio" src="assets/img/portfolio/iconica-studio-portafolio-trabajos.png" />
-	<span itemprop="name">Portafolio de trabajos | Diseño Gráfico Toluca Metepec | Iconica Studio</span>
+    <img itemprop="image" alt="
+    <?php
+            if ( is_front_page()) {
+                echo 'Portafolio de Trabajos | Diseño Gráfico | Iconica Studio';
+            } elseif ( is_single() ) {
+                wp_title('');
+            } else {
+                wp_title(''); echo '| Iconica Studio';
+            }
+        ?>" src="assets/img/portfolio/iconica-studio-portafolio-trabajos.png" />
+	<span itemprop="name">
+        <?php
+            if ( is_front_page()) {
+                echo 'Portafolio de Trabajos | Diseño Gráfico Toluca';
+            } elseif ( is_single() ) {
+                wp_title('');
+            } else {
+                wp_title(''); echo '| Iconica Studio';
+            }
+        ?>
+    </span>
 	<span itemprop="author">Iconica Studio</span>,
 </div>
 	

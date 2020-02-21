@@ -67,16 +67,22 @@ section.portfolio-intro header{
         }
   
   section#portfolio .grid-item .card {
-    border: 0px; }
+    border: 0px; position: relative;}
+  section#portfolio .grid-item .card:hover .w3-theme {
+    opacity: 0.9; transition: all 0.5s;}
+  section#portfolio .grid-item .card:hover .w3-theme .card-text{
+    font-family: 'semplicita'; padding: 0.618rem; margin: 0px;}
     section#portfolio .grid-item .card img {
       transition: 0.5s; }
       @media screen and (prefers-reduced-motion: reduce) {
         section#portfolio .grid-item .card img {
           transition: none; } }
-      section#portfolio .grid-item .card img:hover {
+      section#portfolio .grid-item .card:hover img {
         filter: sepia(0.618); }
-    section#portfolio .grid-item .card .card-text small {
-      font-family: 'satellite'; }
+    section#portfolio .grid-item .card .w3-theme {
+      position: absolute; bottom: 0px; opacity: 0; }
+    /* section#portfolio .grid-item .card .card-text small {
+      font-family: 'satellite'; } */
 
 section#portfolio .card a img{
     width: 100%;

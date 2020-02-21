@@ -39,6 +39,9 @@
             <div class="card">
                 <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
                     <?php the_post_thumbnail(); ?>
+                    <div class="w3-theme">
+                        <p class="card-text"><?php the_title(); ?></p>
+                    </div>
                 </a>
             </div>
         </div>
