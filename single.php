@@ -13,7 +13,10 @@
         <div class="w3-row w3-center">
             <div class="w3-col s12 m1 l2"><p></p></div>
             <div class="w3-col s12 m10 l8">
-                <div class="w3-hide-small" style="height:4rem; width:100%;"></div>
+                <?php $top_banner = get_field('top_banner', 'option'); 
+                    if( $top_banner['show_banner'] == true ) { ?>
+                        <div class="w3-hide-small" style="height:4rem; width:100%;"></div>
+                <?php } ?>
                 <header>
                     <h1 class="w3-text-theme"><small><?php the_title(); ?></small></h1>
                 </header>
@@ -27,10 +30,12 @@
 ================================================== -->
 <section class="w3-section">
 	<div class="w3-container">
-		<div class="w3-row-padding">
-            <div class="w3-col s12 m8 w3-margin-bottom">
+		<div class="w3-row-padding w3-padding-large">
+            <div class="w3-col s0 l1"><p></p></div>
+            <div class="w3-col s12 m7 l6 w3-margin-bottom">
                 <?php the_content(); ?>
             </div>
+            <div class="w3-col s0 m1 l1"><p></p></div>
             <div class="w3-col s12 m4 l3 w3-right-align">
                 <?php get_sidebar(); ?>
             </div>
@@ -45,7 +50,7 @@
 
 <!-- RELATED PROJECTS
 ================================================== -->
-<section class="w3-section" id="portfolio">
+<section class="w3-section" id="portfolio" style="margin-top: 3rem;">
     <div class="w3-row-padding">
         <h2 class="w3-text-theme w3-center">Proyectos Similares</h2>
     </div>

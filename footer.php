@@ -23,6 +23,7 @@
                     <li><h6 class="mb-0">General</h6></li>
                     <li><a href="/" title="iconica-studio-diseno-grafico" class="no-deco">Inicio</a></li>
                     <li><a href="https://iconica.mx/trabajos" title="iconica-studio-trabajos-diseno" class="no-deco">Trabajos</a></li>
+                    <li><a href="https://iconica.mx/blog" title="blog-para-emprendedores" class="no-deco">Blog</a></li>
                     <li><a href="https://iconica.mx/recursos" title="recursos-gratuitos-emprendedores-empresarios" class="no-deco">Recursos</a></li>
                     <li><a href="https://iconica.mx/soporte" title="iconica-studio-atencion-clientes" class="no-deco">Soporte</a></li>
                     <li><a href="https://iconica.mx/iconica-studio-diseno-grafico.html" title="iconica-estudio-diseno-grafico" class="no-deco">Acerca</a></li>

@@ -54,6 +54,11 @@ section.portfolio-intro img{
 section.portfolio-intro header{
     padding-bottom: 2.5rem;
 }
+
+section#portfolio{
+  background:white;
+}
+
     @media (max-width: 991.98px) {
         section.portfolio-intro h1 {
           font-size: 2rem }
@@ -81,8 +86,6 @@ section.portfolio-intro header{
         filter: sepia(0.618); }
     section#portfolio .grid-item .card .w3-theme {
       position: absolute; bottom: 0px; opacity: 0; }
-    /* section#portfolio .grid-item .card .card-text small {
-      font-family: 'satellite'; } */
 
 section#portfolio .card a img{
     width: 100%;
@@ -100,6 +103,12 @@ section#portfolio .page-link a{
 
 section.portfolio-post h1{
     padding-top: 3rem;
+}
+
+section.portfolio-post .wp-block-embed-youtube iframe{
+  width: 100% !important;
+  height: auto;
+  min-height: 360px;
 }
 
 aside h6{
@@ -121,4 +130,8 @@ a[rel="category tag"] {
     color: black;
     font-family:'satellite';
     font-size: 1.3rem;
+}
+
+#snippet-box{
+  display: none !important;
 }

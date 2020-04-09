@@ -85,6 +85,7 @@
             </div>
         </div>
         <a href="https://iconica.mx/trabajos" class="w3-bar-item w3-button w3-text-theme" title="iconica-studio-trabajos-diseno">trabajos</a>
+        <a href="https://iconica.mx/blog" class="w3-bar-item w3-button" title="blog-para-emprendedores">blog</a>
         <a href="https://iconica.mx/recursos" class="w3-bar-item w3-button" title="recursos-gratuitos-emprendedores-empresarios">recursos</a>
         <a href="https://iconica.mx/soporte" class="w3-bar-item w3-button" title="iconica-studio-atencion-clientes">soporte</a>
         <a href="https://iconica.mx/iconica-studio-diseno-grafico.html" class="w3-bar-item w3-button" title="iconica-estudio-diseno-grafico">acerca</a>
@@ -120,6 +121,7 @@
         </div>
     </div>
     <a href="https://iconica.mx/trabajos" class="w3-bar-item w3-button w3-text-theme" title="iconica-studio-trabajos-diseno">trabajos</a>
+    <a href="https://iconica.mx/blog" class="w3-bar-item w3-button w3-text-theme" title="blog-para-emprendedores">blog</a>
     <a href="https://iconica.mx/recursos" class="w3-bar-item w3-button" title="recursos-gratuitos-emprendedores-empresarios">recursos</a>
     <a href="https://iconica.mx/soporte" class="w3-bar-item w3-button" title="iconica-studio-atencion-clientes">soporte</a>
     <a href="https://iconica.mx/iconica-studio-diseno-grafico.html" class="w3-bar-item w3-button" title="iconica-estudio-diseno-grafico">acerca</a>
